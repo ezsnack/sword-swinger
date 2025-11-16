@@ -9,7 +9,7 @@ A game written in lua using the love2d framework. This is my final project for H
 #### How to run (from source code)
 1. Install the love2d framework (available at https://love2d.org)
 2. Download and unzip the files in this directory
-3. On Linux (and probably MacOS): navigate to the directory containing main.lua and the other files and run `love .`
+3. On Linux (and probably MacOS): navigate to the directory containing main.lua and the other files and run `love .`  
    On Windows: Using left mouse click, pull the folder containing main.lua and the other files onto love.exe or a shortcut thereof, then let go of left mouse click
 
 #### About the project
@@ -36,66 +36,66 @@ I made a vector class and modified its metatable to implement vector arithmetics
 **main.lua**
 The starting point of the program. Loads everything else and contains important global variables.
 **dependencies.lua**
-Imports ("requires") all the game files and assets.
+Imports ("requires") all the game files and assets.  
 **class.lua**
-this is the implementation which allows creating classes and to simplify object oriented programming in lua. I took this from the games50 github, original author is Matthias Richter.
+this is the implementation which allows creating classes and to simplify object oriented programming in lua. I took this from the games50 github, original author is Matthias Richter.  
 **defAnimations.lua**
-Defines all the animations used in the game.
+Defines all the animations used in the game.  
 **Animation.lua**
-A class used to create animations.
+A class used to create animations.  
 **Hitbox.lua**
-A class used to create hitboxes.
+A class used to create hitboxes.  
 **Vector.lua**
-A class used to create vectors with custom arithmetic operations.
+A class used to create vectors with custom arithmetic operations.  
 **Bloodstain.lua**
-A class used to create bloodstains, which will render for a while after an entity in the game dies.
+A class used to create bloodstains, which will render for a while after an entity in the game dies.  
 **Field.lua**
-The game "world" (just a static area).
+The game "world" (just a static area).  
 **Entity.lua**
-A class which all entities inherit from.
+A class which all entities inherit from.  
 **StateMachine.lua**
-A class used to create state machines. Taken mostly from the games50 github.
+A class used to create state machines. Taken mostly from the games50 github.  
 **BaseState.lua**
-There to avoid defining empty methods for unused methods in states. Also from the games50 github.
+There to avoid defining empty methods for unused methods in states. Also from the games50 github.  
 **StartState.lua**
-The starting state of the game. Shows a message on how to start the game.
+The starting state of the game. Shows a message on how to start the game.  
 **PlayState.lua**
-The state the game is in when it is being played.
+The state the game is in when it is being played.  
 **GameOverState.lua**
-The state the game after losing.
+The state the game after losing.  
 **GameWinState.lua**
-The state the game after winning.
+The state the game after winning.  
 **waves.lua**
-Defines which enemies spawn where and when as the game progresses.
+Defines which enemies spawn where and when as the game progresses.  
 **Player.lua**
-A class for the player entity.
+A class for the player entity.  
 **NormalState.lua**
-The normal state of the player, in which the player can move and attack.
+The normal state of the player, in which the player can move and attack.  
 **SpinAttackState.lua**
-The state of the player after activating the spin special attack, which lasts for 5 seconds.
+The state of the player after activating the spin special attack, which lasts for 5 seconds.  
 **PushedBackState.lua**
-The state of the player after taking damage from an enemy. The player will be pushed back a bit.
+The state of the player after taking damage from an enemy. The player will be pushed back a bit.  
 **Enemy.lua**
-A class that enemy entities inherit from.
+A class that enemy entities inherit from.  
 **Roach.lua**
-A class for the roach enemy.
+A class for the roach enemy.  
 **Goblin.lua**
-A class for the goblin enemy.
+A class for the goblin enemy.  
 **Charger.lua**
-A class for the charger enemy.
+A class for the charger enemy.  
 **ChargerNormalState.lua**
-The initial state of the charger enemy. Walks slowly towards the player.
+The initial state of the charger enemy. Walks slowly towards the player.  
 **ChargerChargingState.lua**
-The state of the charger enemy when it is "charging up" his charge.
+The state of the charger enemy when it is "charging up" his charge.  
 **ChargerChargeState.lua**
-The state of the charger enemy when it charging at the player.
+The state of the charger enemy when it charging at the player.  
 **ChargerRecoverState.lua**
-The state of the charger enemy when it has hit a wall during its charge. Returns to normal state after.
+The state of the charger enemy when it has hit a wall during its charge. Returns to normal state after.  
 **Giant.lua**
-A class for the giant enemy.
+A class for the giant enemy.  
 **GiantNormalState.lua**
-The initial state of the giant enemy. Walks around slowly.
+The initial state of the giant enemy. Walks around slowly.  
 **GiantWindupState.lua**
-The state of the giant enemy after the player moves into its attack range. Prepares for attack.
+The state of the giant enemy after the player moves into its attack range. Prepares for attack.  
 **GiantSwingState.lua**
-The attack state of the giant enemy. Swings a huge sword in a circle.
+The attack state of the giant enemy. Swings a huge sword in a circle.  
