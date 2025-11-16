@@ -6,7 +6,16 @@ This is a reupload of my CS50x final project, since the course repo is private a
 #### Description
 A game written in lua using the love2d framework. This is my final project for Harvard's CS50x course.
 
-#### How to run (from source code)
+#### How to run
+##### On Linux
+1. Install the love2d framework (using your package manager or download from https://love2d.org)
+2. Download sword-swinger.love from this repository and navigate to your download directory
+3. Run the game using `love sword-swinger.love`
+##### On Windows
+1. Download sword-swinger.exe from this repository
+2. Run the executable (by double clicking/pressing enter or whatever)
+
+##### Running from source code
 1. Install the love2d framework (available at https://love2d.org)
 2. Download and unzip the files in this directory
 3. On Linux (and probably MacOS): navigate to the directory containing main.lua and the other files and run `love .`  
