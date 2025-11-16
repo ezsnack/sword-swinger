@@ -6,6 +6,12 @@ This is a reupload of my CS50x final project, since the course repo is private a
 #### Description
 A game written in lua using the love2d framework. This is my final project for Harvard's CS50x course.
 
+#### How to run (from source code)
+1. Install the love2d framework (available at https://love2d.org)
+2. Download and unzip the files in this directory
+3. On Linux (and probably MacOS): navigate to the directory containing main.lua and the other files and run `love .`
+   On Windows: Using left mouse click, pull the folder containing main.lua and the other files onto love.exe or a shortcut thereof, then let go of left mouse click
+
 #### About the project
 
 Controls: Move with WASD, attack with arrow keys. Space to activate a special spin attack when rage is at max. Gain rage by hitting enemies. Press ESC at any time to quit the program.
